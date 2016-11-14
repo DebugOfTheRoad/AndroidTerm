@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        android:key="localEcho"
+        android:title="Local Echo"/>
+    <com.vanniktech.vntnumberpickerpreference.VNTNumberPickerPreference
+        android:defaultValue="12"
+        android:key="fontSize"
+        android:title="Font Size"
+        app:vnt_maxValue="100"
+        app:vnt_minValue="1"
+        app:vnt_setWrapSelectorWheel="false"/>
+    <ListPreference
+        android:key="baudRate"
+        android:title="Baud Rate"
+        android:summary="%s"
+        android:entries="@array/baudRates"
+        android:entryValues="@array/baudRates"
+        android:defaultValue="9600" />
+    <ListPreference
+        android:key="dataBits"
+        android:title="Bits per character"
+        android:summary="%s"
+        android:entries="@array/dataBitsText"
+        android:entryValues="@array/dataBits"
+        android:defaultValue="8"/>
+    <ListPreference
+        android:key="parity"
+        android:title="Parity"
+        android:summary="%s"
+        android:entries="@array/parityText"
+        android:entryValues="@array/parity"
+        android:defaultValue="0"/>
+    <ListPreference
+        android:key="flowControl"
+        android:title="Flow Control"
+        android:summary="%s"
+        android:entries="@array/flowControlText"
+        android:entryValues="@array/flowControl"
+        android:defaultValue="0"/>
+    <CheckBoxPreference
+        android:key="utf8"
+        android:title="UTF8?"/>
+    <Preference
+        android:selectable="false"
+        android:enabled="true"
+        android:key="example_key"
+        android:title=""
+        android:summary="Some settings may require a restart of the application" />
+</PreferenceScreen>

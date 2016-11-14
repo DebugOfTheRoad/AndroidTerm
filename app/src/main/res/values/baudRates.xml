@@ -1,0 +1,44 @@
+<resources>
+    <string-array name="baudRates">
+        <item>9600</item>
+        <item>115200</item>
+    </string-array>
+    <string-array name="dataBitsText">
+        <item>5 Bits</item>
+        <item>6 Bits</item>
+        <item>7 Bits</item>
+        <item>8 Bits</item>
+    </string-array>
+    <string-array name="dataBits">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="flowControlText">
+        <item>Off</item>
+        <item>RTS/CTS</item>
+        <item>DSR/DTR</item>
+        <item>XON/XOFF</item>
+    </string-array>
+    <string-array name="flowControl">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="parity">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="parityText">
+        <item>Off</item>
+        <item>Odd</item>
+        <item>Even</item>
+        <item>Mark</item>
+        <item>Space</item>
+    </string-array>
+</resources>
